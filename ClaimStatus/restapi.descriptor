@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:restapiDescriptor xmlns="http://com.ibm.etools.mft.descriptor.base" xmlns:ns2="http://com.ibm.etools.mft.descriptor.restapi" definitionType="openapi_3" definitionFile="Claim Status API V2.json" implementation="gen/ClaimStatus.msgflow" https="false" definitionWithExtRef="false" faultFormat="JSON">
+    <ns2:operations>
+        <ns2:operation name="claimstatus" implementation="claimstatus.subflow"/>
+        <ns2:operation name="healthCheck" implementation="healthCheck.subflow"/>
+        <ns2:operation name="rawX12" implementation="rawX12.subflow"/>
+    </ns2:operations>
+    <ns2:errorHandlers/>
+</ns2:restapiDescriptor>
